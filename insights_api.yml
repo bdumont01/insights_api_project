@@ -1,22 +1,22 @@
 ---
 
-- name: capture hosts adding to compliance policies
-  hosts: all 
-  gather_facts: yes
+#- name: capture hosts adding to compliance policies
+#  hosts: all 
+#  gather_facts: yes
 #  remote_user: cloud-user
-  vars_files:
-    - secrets_folder/ovirt-pass 
+#  vars_files:
+#    - secrets_folder/ovirt-pass 
 
-  tasks:
+#  tasks:
  
-    - name: create standard policy host list
-      template:
-        src: templates/STD_host_file_template.j2
-        dest: /files/std_compliance_hosts-1
-      delegate_to: localhost
-      vars:
-        ansible_connection: local
-      when: compliance_type == 'label_compliance_policy_standard' 
+#    - name: create standard policy host list
+#      template:
+#        src: templates/STD_host_file_template.j2
+#        dest: /files/std_compliance_hosts-1
+#      delegate_to: localhost
+#      vars:
+#        ansible_connection: local
+#      when: compliance_type == 'label_compliance_policy_standard' 
 
 
 #    - name: create pci policy host list
