@@ -123,7 +123,7 @@
       set_fact:
         file_contents: "{{ item }}"
       with_file:
-        - "/home/runner/files/std_compliance_hosts-1"
+        - "/home/runner/files/std_compliance_hosts"
       delegate_to: localhost
 #      when: compliance_type == 'label_compliance_policy_standard'
 
