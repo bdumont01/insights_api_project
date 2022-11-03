@@ -1,7 +1,7 @@
 ---
 
 - name: capture hosts adding to compliance policies
-  hosts: label_compliance_policy_standard 
+  hosts: all 
   gather_facts: yes
 #  remote_user: cloud-user
   vars_files:
@@ -16,7 +16,7 @@
       delegate_to: localhost
       vars:
         ansible_connection: local
-#      when: compliance_type == 'label_compliance_policy_standard' 
+      when: compliance_type == 'label_compliance_policy_standard' 
 
 
 #    - name: create pci policy host list
