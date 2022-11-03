@@ -8,7 +8,7 @@
     - name: create standard policy host list
       template:
         src: templates/STD_host_file_template.j2
-        dest: files/std_compliance_hosts
+        dest: /home/runner/files/std_compliance_hosts
       delegate_to: localhost
         
 
