@@ -32,7 +32,7 @@
   hosts: localhost
   vars:
     - ansible_connection: local
-    - profile_name: 'Protection Profile for General Purpose Operating Systems'
+#    - profile_name: 'Protection Profile for General Purpose Operating Systems'
   gather_facts: no
 #  vars:
 #    - profile_name: 'Protection Profile for General Purpose Operating Systems'
