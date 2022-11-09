@@ -1,6 +1,6 @@
 ---
 - name: capture hosts for standard compliance policy
-  host: all
+  hosts: all
   gather_facts: no
 #  remote_user: cloud-user
   tasks:
