@@ -1,7 +1,7 @@
 ---
 - name: capture hosts for standard compliance policy
-  hosts: all
-#  gather_facts: yes
+  host: all
+  gather_facts: no
 #  remote_user: cloud-user
   tasks:
 
@@ -11,13 +11,5 @@
         dest: /home/runner/files/std_compliance_hosts
       delegate_to: localhost
         
-
-#    - name: set file content variable
-#      set_stats:
-#        data:
-#          file_contents: "{{ item }}"
-#      with_file:
-#        - "files/std_compliance_hosts"
-#      delegate_to: localhost
 
 
