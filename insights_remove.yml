@@ -7,6 +7,6 @@
 
   tasks:
     - name: unregister host from insights
-      insights_register:
+      redhat.insights.insights_register:
         state: absent 
 
