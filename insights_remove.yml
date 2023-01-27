@@ -1,0 +1,12 @@
+---
+- name: unregister host from insights 
+  hosts: all 
+#    - aap-control.dumont-lab.lan
+#    - aap-hub.dumont-lab.lan
+  become: true
+
+  tasks:
+    - name: unregister host from insights
+      redhat.insights.insights_register:
+        state: absent 
+
