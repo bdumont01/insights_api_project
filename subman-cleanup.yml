@@ -5,6 +5,11 @@
 
   tasks:
   - name: remove hosts from subscription manager
-    ansible.builtin.command: yum clean all && rm -rf /var/cache/yum/* && subscription-manager remove --all && subscription-manager unregister && subscription-manager clean
+    ansible.builtin.shell: |
+      yum clean all && 
+      rm -rf /var/cache/yum/* && 
+      subscription-manager remove --all && 
+      subscription-manager unregister && 
+      subscription-manager clean
     register: results
 
