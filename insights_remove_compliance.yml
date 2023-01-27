@@ -1,0 +1,14 @@
+---
+- name: remove insights compliance packages
+  hosts: all
+  become: true
+
+  tasks:
+
+  - name: remove openscap packages
+    yum:
+      name:
+        - openscap
+        - scap-security-guide
+        - openscap-scanner
+      state: absent 
