@@ -1,2 +1,5 @@
 secrets_folder/
 *.log
+artifacts/*
+ansible-navigator.log
+
